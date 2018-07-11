@@ -92,10 +92,11 @@
 
 <script>
 export default {
+  //判断是否登录
   beforeCreate() {
     const token = sessionStorage.getItem('token');
     if (!token) {
-      //如果没有token,返回登录页面
+    //如果没有token,返回登录页面
       this.$message.push({name:'login'});
       this.$message.warning('请先登录');
     }
@@ -109,7 +110,7 @@ export default {
       this.$message.success('退出成功');
     }
   }
-};  
+}; 
 </script>
 
 <style>

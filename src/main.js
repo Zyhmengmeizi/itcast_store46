@@ -11,7 +11,7 @@ import moment from 'moment';
 
 Vue.config.productionTip = false;
 // 全局过滤器，格式化日期
-Vue.filter('famDate',(value,farmetStr)=> {
+Vue.filter('famDate',(value, farmetStr) => {
   return moment(value).format(farmetStr);
 });
 // 注册插件
