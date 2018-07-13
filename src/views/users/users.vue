@@ -1,10 +1,11 @@
 <template>
   <el-card class="box-card">
-   <el-breadcrumb separator-class="el-icon-arrow-right">
+    <my-breadcrumb level1="用户管理" level2="用户列表"></my-breadcrumb>
+   <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item><a href="/">用户管理</a></el-breadcrumb-item>
       <el-breadcrumb-item>用户列表</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
     <!-- 搜索区域 -->
     <el-row class="searchArea">
       <el-col :span="24">

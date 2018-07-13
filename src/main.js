@@ -8,12 +8,15 @@ import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/css/style.css';
 import MyAxios from '@/plugins/myaxios';
 import moment from 'moment';
+import MyBreadcrumb from '@/components/MyBreadcrumb';
 
 Vue.config.productionTip = false;
+Vue.component(MyBreadcrumb.name, MyBreadcrumb);
 // 全局过滤器，格式化日期
 Vue.filter('famDate',(value, farmetStr) => {
   return moment(value).format(farmetStr);
 });
+
 // 注册插件
 Vue.use(MyAxios);
 Vue.use(ElementUI);
